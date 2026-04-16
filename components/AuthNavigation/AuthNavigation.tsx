@@ -1,4 +1,4 @@
-import css from "./AuthNavigation.module.scss";
+import css from "./AuthNavigation.module.css";
 
 export default function AuthNavigation() {
   return (

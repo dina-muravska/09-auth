@@ -58,6 +58,7 @@ export default function EditProfile() {
     <main className={css.mainContent}>
       <div className={css.profileCard}>
         <h1 className={css.formTitle}>Edit Profile</h1>
+        {error && <p className={css.error}>{error}</p>}
         {userEdit?.avatar && (
           <Image
             src={userEdit?.avatar}

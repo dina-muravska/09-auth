@@ -11,17 +11,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "User Profile | NoteHub",
     description:
-      "Manage your NoteHub account settings and profile information. Stay organized and productive with NoteHub.",
-    // url: //// "/profile",
+      "Manage your NoteHub account settings and profile information.",
+    url: "https://09-auth-dusky-nine.vercel.app/profile",
 
-    // // images: [
-    // //   {
-    // //     // url: ,
-    // //     width: 1200,
-    // //     height: 630,
-    // //     alt: "NoteHub — online note-taking app",
-    // //   },
-    // ],
+    images: [
+      {
+        url: "https://09-auth-dusky-nine.vercel.app/profile",
+        width: 1200,
+        height: 630,
+        alt: "NoteHub — online note-taking app",
+      },
+    ],
   },
 };
 

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
-import { fetchNotes } from "@/lib/api";
+import { fetchNotes } from "@/lib/api/clientApi";
 import css from "./NotesPage.module.css";
 import Error from "./error";
 import Loading from "@/app/loading";
@@ -28,7 +28,7 @@ export default function NotesClient({ category }: NotesClientProps) {
 
   const { data, isLoading, error, isSuccess, isError } = useQuery({
     queryKey: ["notes", page, debouncedSearch, category],
-    queryFn: () => fetchNotes({ page, search: debouncedSearch, tag: category }),
+    queryFn: () => fetchNotes(debouncedSearch, category, page),
     placeholderData: keepPreviousData,
   });
 

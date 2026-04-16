@@ -1,6 +1,6 @@
 "use client";
 import type { NoteTag, NoteFormValues } from "../../types/note";
-import { createNote } from "../../lib/api";
+import { createNote } from "../../lib/api/clientApi";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useNoteDraftStore } from "@/lib/store/noteStore";
